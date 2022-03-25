@@ -3,9 +3,11 @@ package com.github.javafaker;
 public class AquaTeenHungerForce {
 
     private final Faker faker;
+    private final Test test;
 
-    protected AquaTeenHungerForce(Faker faker) {
+    protected AquaTeenHungerForce(Faker faker,Test test) {
         this.faker = faker;
+        this.test=test;
     }
 
     public String character() {
