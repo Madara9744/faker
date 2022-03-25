@@ -21,4 +21,11 @@ public class Color {
             return "#" + hexString;
         return hexString;
     }
+    
+    public String colourCode(boolean includeHashSign) {
+        String hexString = faker.random().colourCode(8);
+        if(includeHashSign)
+            return "@" + hexString;
+        return hexString;
+    }
 }
