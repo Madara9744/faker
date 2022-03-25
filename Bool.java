@@ -10,4 +10,8 @@ public class Bool {
     public boolean bool() {
         return faker.random().nextBoolean();
     }
+    
+    public boolean isEmpty() {
+        return faker.random().nextBoolean();
+    }
 }
