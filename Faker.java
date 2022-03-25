@@ -107,6 +107,30 @@ public class Faker {
     private final Sip sip;
     private final EnglandFootBall englandfootball;
     private final Mountain mountain;
+    private final Currency currency;
+    private final Company company;
+    private final Crypto crypto;
+    private final IdNumber idNumber;
+    private final Hacker hacker;
+    private final Options options;
+    private final Code code;
+    private final Coin coin;
+    private final Finance finance;
+    private final Food food;
+    private final GameOfThrones gameOfThrones;
+    private final Gender gender;
+    private final DateAndTime dateAndTime;
+    private final Demographic demographic;
+    private final Dog dog;
+    private final Educator educator;
+    private final ElderScrolls elderScrolls;
+    private final Shakespeare shakespeare;
+    private final SlackEmoji slackEmoji;
+    private final Space space;
+    private final Superhero superhero;
+    private final Bool bool;
+    private final Team team;
+    private final Beer beer;
 
     public Faker() {
         this(Locale.ENGLISH);
