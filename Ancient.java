@@ -23,4 +23,7 @@ public class Ancient {
     public String hero() {
         return faker.resolve("ancient.hero");
     }
+    public String health() {
+        return faker.resolve("ancient.hero");
+    }
 }
