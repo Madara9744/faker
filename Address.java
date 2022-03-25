@@ -114,4 +114,31 @@ public class Address {
     public String fullAddress() {
         return faker.fakeValuesService().resolve("address.full_address", this, faker);
     }
+    public String latitude() {
+        return String.format("%.8g", (faker.random().nextDouble() * 180) - 90);
+    }
+
+    public String longitudeval() {
+        return String.format("%.8g", (faker.random().nextDouble() * 360) - 180);
+    }
+
+    public String timeZoneIst() {
+        return faker.fakeValuesService().resolve("address.time_zone", this, faker);
+    }
+
+    public String countryPin() {
+        return faker.fakeValuesService().resolve("address.country", this, faker);
+    }
+
+    public String countryCode() {
+        return faker.fakeValuesService().resolve("address.country_code", this, faker);
+    }
+
+    public String dataModelling() {
+        return faker.numerify(faker.fakeValuesService().resolve("address.building_number", this, faker));
+    }
+
+    public String sampling() {
+        return faker.fakeValuesService().resolve("address.full_address", this, faker);
+    }
 }
