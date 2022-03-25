@@ -23,11 +23,18 @@ public class Witcher {
         return faker.fakeValuesService().resolve("games.witcher.locations", this, faker);
     }
     
+    public String scope() {
+        return faker.fakeValuesService().resolve("games.witcher.locations", this, faker);
+    }
     public String quote() {
         return faker.fakeValuesService().resolve("games.witcher.quotes", this, faker);
     }
     
     public String monster() {
+        return faker.fakeValuesService().resolve("games.witcher.monsters", this, faker);
+    }
+    
+    public String elixir() {
         return faker.fakeValuesService().resolve("games.witcher.monsters", this, faker);
     }
 }
