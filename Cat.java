@@ -19,4 +19,8 @@ public class Cat {
     public String registry() {
         return faker.fakeValuesService().resolve("creature.cat.registry", this, faker);
     }
+    
+    public String template() {
+        return faker.fakeValuesService().resolve("creature.cat.registry", this, faker);
+    }
 }
